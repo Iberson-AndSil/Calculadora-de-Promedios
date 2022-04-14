@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/04/09 19:09:36.000.757,=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/12 14:02:53.000.423,=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/13 10:26:02.000.180,=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/13 10:32:13.000.205,=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/13 19:07:29.000.802,=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/14 06:16:07.000.151,=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/14 14:31:11.137,=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/14 14:32:20.040,C:\Users\Iberson\Repositorio\MedioCurso\Unit1.pas=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/14 14:32:20.040,C:\Users\Iberson\Repositorio\MedioCurso\Unit1.fmx=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2022/04/14 14:32:24.988,C:\Users\Iberson\Repositorio\MedioCurso\Project1.dproj=C:\Users\Iberson\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/04/14 14:45:52.999,=C:\Users\Iberson\Repositorio\MedioCurso\Unit2.pas</Transaction>
+    <Transaction>2022/04/14 17:08:19.609,=C:\Users\Iberson\Repositorio\MedioCurso\DataCursos.mdb</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="R9WN50XZQ2J" Android64="R9WN50XZQ2J"/>
+	</ActiveMobileDevice>
+</BorlandProject>

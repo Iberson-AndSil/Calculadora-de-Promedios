@@ -1,0 +1,91 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 272
+  ClientWidth = 298
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Position.Y = -6.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 278.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Titulo: TLabel
+      Position.X = 88.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Digita Curso:'
+      TabOrder = 0
+    end
+    object pideCodigoCurso: TLabel
+      Position.X = 40.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Codigo:'
+      TabOrder = 1
+    end
+    object GuardaCodigo: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 120.000000000000000000
+      Position.Y = 59.000000000000000000
+    end
+    object pideNombreCurso: TLabel
+      Position.X = 40.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nombre:'
+      TabOrder = 3
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 120.000000000000000000
+      Position.Y = 107.000000000000000000
+    end
+    object pideHoras: TLabel
+      Position.X = 40.000000000000000000
+      Position.Y = 137.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Horas semanales:'
+      TabOrder = 5
+    end
+    object guardaHoras: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.X = 120.000000000000000000
+      Position.Y = 156.000000000000000000
+    end
+    object GuardarCurso: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 104.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Guardar Curso'
+    end
+    object CambiarVenetana: TButton
+      Position.X = 152.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = 'Lista de Cursos'
+      OnClick = CambiarVenetanaClick
+    end
+  end
+end
