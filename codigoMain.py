@@ -113,7 +113,6 @@ def guardaCurso():
         edtNombre.delete(0, "end")
         edtHoras.delete(0, "end")
         
-
     #Boton para guardar registros
     btnGuardarenBD = tk.Button(text="Registrar", command=registerBd)
     btnGuardarenBD.place(x=120, y=210)
@@ -141,8 +140,6 @@ def guardaCurso():
         cuadroText = tk.Listbox(PestañaGuardaCurso)
         scrollbar = tk.Scrollbar(cuadroText) 
         scrollbar.pack(side = RIGHT, fill = BOTH) 
-        # ******************************************************************************************+
-        # ******************************************************************************************+
 
         Str_value = var
         for index in range ( len ( Str_value ) ):
@@ -182,7 +179,7 @@ def guardaCurso():
             entry.set(entry.get()[:2])
 
     entry.trace("w", lambda *args: limitador(entry))
-    #***************************************************************************************************************
+
     def EliminaRegistro():
         messagebox.showinfo(message="Acualzar tabla.", title="Registro Elimado")
         guardaCodigo = edtGuardaCodigo.get()
@@ -320,8 +317,6 @@ def RegistraNotas():
             edtGuardaNotasPracticas = tk.Entry(justify=CENTER)
             edtGuardaNotasPracticas.place(x=90, y=210)
 
-            
-
             def MostrarPromedio():
                 #Algoritmo para calcular el promedio de las practicas
                 try:
@@ -340,8 +335,7 @@ def RegistraNotas():
                         sumaPracticas += numeroextraido
                 except ValueError:
                     print("0")
-                
-                
+
                 #Datos de examenes...
                 PromedioPracticas = sumaPracticas/contador
                 MedioCurso = float(edtGuardaNotaMedioCurso.get())
