@@ -1,3 +1,4 @@
+from cProfile import label
 from hashlib import new
 from lib2to3.pytree import convert
 from tkinter import BOTH, RIGHT, Button, Variable, messagebox
@@ -18,6 +19,7 @@ import re
 ventanaPrincipal = tk.Tk()
 ventanaPrincipal.title("Promedios :)")
 ventanaPrincipal.geometry('300x400')
+ventanaPrincipal.resizable(0,0)
 
 #Conectando a la base de datos local...
 conex = sqlite3.connect("BasedeDatos.db")
@@ -46,6 +48,9 @@ def guardaCurso():
         return char in "0123456789."
 
     validatecommand = PestañaGuardaCurso.register(is_valid_char)
+
+    lblMuestratexto = tk.Label(text="Datos del Curso")
+    lblMuestratexto.place(x=100, y=60)
 
     #Agrego un codigo opcional que aun no esta guardado en la bd
     Cr.execute("select codigo from cursos")
@@ -206,18 +211,6 @@ def RegistraNotas():
     lblBuscarxID = tk.Label(text="ID del curso:")
     lblBuscarxID.place(x=20, y=50)
 
-    '''
-    entry_text = StringVar()
-    edtCodigo = tk.Entry(textvariable=entry_text, validate="key", validatecommand=(validatecommand, "%S")  ,justify=CENTER)
-    edtCodigo.place(x=120, y=120)
-    def limitador(entry_text):
-        if len(entry_text.get()) > 0:
-            entry_text.set(entry_text.get()[:2])
-
-    entry_text.trace("w", lambda *args: limitador(entry_text))
-    
-    '''
-
     #Capturando dato...
     entry_text = StringVar()
     edtGuardaID = tk.Entry(textvariable=entry_text, validate="key", validatecommand=(validatecommand, "%S")  ,justify=CENTER)
@@ -374,11 +367,11 @@ def RegistraNotas():
 
 #Boton para guardar curso
 btnGuardarCursos = tk.Button(text="Guarda Curso", command=guardaCurso)
-btnGuardarCursos.place(x=0, y=0)
+btnGuardarCursos.place(x=0, y=0, width="150", height="26")
 
 #Boton para registrar notas
 btnRegistrarNotas = tk.Button(text="Registra Notas", command=RegistraNotas)
-btnRegistrarNotas.place(x=85, y=0)
+btnRegistrarNotas.place(x=150, y=0, width="150", height="26")
 
 # conex.close()
 ventanaPrincipal.mainloop()
